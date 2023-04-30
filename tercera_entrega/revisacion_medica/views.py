@@ -15,5 +15,16 @@ def medico(request):
 def revisaciones(request):
     return render(request, 'revisacion_medica/revisacion.html')
 
+def clientes_form(request):
+    
+    return render (request, 'revisacion_medica/clientes_form.html')
+
+def medicos_form(request):
+
+    return render (request, 'revisacion_medica/medicos_form.html')
+
+def revisacion_form(request):
+
+    return render(request, 'revisacion_medica/revisacion_form.html')
 
 

@@ -1,0 +1,36 @@
+{% extends 'revisacion_medica/padre.html' %}
+{% load static %}
+{% block medicos %}
+
+        <section class="page-section bg-primary text-white mb-0" id="about">
+            <div class="container">
+                <!-- About Section Heading-->
+                <h2 class="page-section-heading text-center text-uppercase text-white">MEDICOS</h2>
+                <!-- Icon Divider-->
+                <div class="divider-custom divider-light">
+                    <div class="divider-custom-line"></div>
+                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                    <div class="divider-custom-line"></div>
+                </div>
+                <form id="contactForm" data-sb-form-api-token="API_TOKEN" action = '/formularioMedicos' method = 'POST'> {%csrf_token%}
+                    <!-- Name input-->
+                    <div class="form-floating mb-3">
+                        <input class="form-control" id="name" type="text" placeholder="Ingrese Nombre..." data-sb-validations="required" />
+                        <label for="name">Nombre</label>
+                        <div class="invalid-feedback" data-sb-feedback="name:required">Se requiere un nombre</div>
+                    </div>
+                    <!-- Surname address input-->
+                    <div class="form-floating mb-3">
+                        <input class="form-control" id="Apellido" type="text" placeholder="Ingrese apellido..." data-sb-validations="required,email" />
+                        <label for="Apellido">Apellido</label>
+                        <div class="invalid-feedback" data-sb-feedback="surname:required">Se requiere un apellido.</div>
+                        <div class="invalid-feedback" data-sb-feedback="surname:surname">Apellido no valido.</div>
+                    </div>
+                    <!-- Phone number input-->
+                    <div class="form-floating mb-3">
+                        <input class="form-control" id="Matricula" type="number" placeholder="120755" data-sb-validations="required" />
+                        <label for="Matricula">Numero de matricula</label>
+                        <div class="invalid-feedback" data-sb-feedback="matricula:required">Se requeire una matricula.</div>
+                    </div>
+
+{%endblock%}    
