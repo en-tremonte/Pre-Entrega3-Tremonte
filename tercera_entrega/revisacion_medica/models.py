@@ -14,11 +14,12 @@ class medicos(models.Model):
     matricula = models.IntegerField()    
 
 class revisacion(models.Model):
-    nombre_cliente = clientes.nombre
-    apellido_cliente = clientes.apellido
-
+    datos_socio = models.CharField(max_length=30)
+    datos_medico = models.CharField(max_length=30)
+    
     fecha_revisacion = models.DateField()
     fecha_vencimiento = models.DateField()
     apto = models.BooleanField() 
 
-    medico = medicos.matricula
+
+    
