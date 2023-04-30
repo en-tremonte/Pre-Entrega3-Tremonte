@@ -12,35 +12,17 @@
                     <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
                     <div class="divider-custom-line"></div>
                 </div>
-                <form id="contactForm" data-sb-form-api-token="API_TOKEN" action = '/formularioRevisacion' method = 'POST'> {%csrf_token%}
-                    <!-- Name input-->
-                    <div class="form-floating mb-3">
-                        <input class="form-control" id="name" type="text" placeholder="Ingrese datos del socio..." data-sb-validations="required" />
-                        <label for="name">Nombre y apellido del socio</label>
-                        <div class="invalid-feedback" data-sb-feedback="name:required">Se requiere un nombre</div>
-                    </div>
-                    <!-- doctor input-->
-                    <div class="form-floating mb-3">
-                        <input class="form-control" id="name" type="text" placeholder="Ingrese datos del medico..." data-sb-validations="required" />
-                        <label for="datos medico">Datos del medico</label>
-                        <div class="invalid-feedback" data-sb-feedback="surname:required">Error.</div>
-                        <div class="invalid-feedback" data-sb-feedback="surname:surname">Error.</div>
-                    </div>
-                    <!-- fecha de revisacion-->
-                    <div class="form-floating mb-3">
-                        <input class="form-control" id="fecha1" type="number" placeholder="2023/04/30" data-sb-validations="required" />
-                        <label for="Fecha de revisacion">Fecha de revisacion</label>
-                        <div class="invalid-feedback" data-sb-feedback="fecha1:required">Error.</div>
-                    </div>
-                    <!-- fecha de vencimiento-->
-                    <div class="form-floating mb-3">
-                        <input class="form-control" id="fecha2" type="number" placeholder="2023/05/30" data-sb-validations="required" />
-                        <label for="Fecha de vencimiento">Fecha de vencimiento</label>
-                        <div class="invalid-feedback" data-sb-feedback="fecha1:required">Error.</div>
-                    </div>
-                    <div class="form-check mb-3">
-                        <input class="form-check-input" type="checkbox" id="myCheckbox" name="myCheckbox">
-                        <label class="form-check-label" for="myCheckbox">Apto</label>
-                    </div>
+                <form action = "" method = 'POST'> 
+                    {%csrf_token%}
+                    
+                    <table>
+
+                        {{formulario.as_table}}
+
+                    </table>
+                    
+                    
+                    <input type="submit", value="Enviar">
+                </form>
 
 {%endblock%}    
