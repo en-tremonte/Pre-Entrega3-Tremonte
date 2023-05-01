@@ -64,10 +64,10 @@ def busqueda_revisacion(request):
 def buscar(request):
     if request.GET['datos_socio']:
 
-        datos_socio = request.GET['datos_socio']
-        revisaciones = revisacion.objects.filter(datos_socio__iconteins=datos_socio)
+        dato_socio = request.GET['datos_socio']
+        revis = revisacion.objects.filter(datos_socio__icontains=dato_socio)
 
-        return render(request, 'revisacion_medica/resultados_search.html', {'revisacions':revisaciones}, {'datos_socio' :datos_socio})
+        return render(request, 'revisacion_medica/resultados_search.html', {'revisaciones': revis})
     
     else:
 
