@@ -1,0 +1,31 @@
+{% extends 'revisacion_medica/padre.html' %}
+{% load static %}
+{% block revisaciones %}
+
+            <section class="page-section" id="contact">
+                <div class="container">
+                    <!-- Contact Section Heading-->
+                    <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">REVISACIONES</h2>
+                    <!-- Icon Divider-->
+                    <div class="divider-custom">
+                        <div class="divider-custom-line"></div>
+                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                        <div class="divider-custom-line"></div>
+                    </div>
+                    <div>
+                        <p> Revisacion de: {{datos_socio}} </p>
+
+                        {%if revisaciones %}
+                        
+                        <ul>
+                            {%for revisacion in revisaciones%}
+                                <li> {{revisacion.datos_socio}}</li>
+                                <li> {{revisacion.apto}}</li>
+                            {%endfor%}
+                        </ul>
+                        
+                        {%endif%}
+                    </div>
+                </div>
+            </section>
+{% endblock %}

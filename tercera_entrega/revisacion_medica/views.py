@@ -29,7 +29,6 @@ def clientes_form(request):
 
     return render(request, 'revisacion_medica/clientes_form.html', {'formulario': formulario})
 
-
 def medicos_form(request):
     if request.method == 'POST':
         formulario = Medicos_form(request.POST)
@@ -58,4 +57,23 @@ def revisacion_form(request):
         formulario = Revisaciones_form()
     return render(request, 'revisacion_medica/medicos_form.html', {'formulario': formulario})
 
+def busqueda_revisacion(request):
 
+    return render (request, 'revisacion_medica/revisacion_search.html')
+
+def buscar(request):
+    if request.GET['datos_socio']:
+
+        datos_socio = request.GET['datos_socio']
+        revisaciones = revisacion.objects.filter(datos_socio__iconteins=datos_socio)
+
+        return render(request, 'revisacion_medica/resultados_search.html', {'revisacions':revisaciones}, {'datos_socio' :datos_socio})
+    
+    else:
+
+        respuesta = 'No enviaste datos'
+
+    return HttpResponse (respuesta)
+   
+
+    
