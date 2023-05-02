@@ -1,0 +1,47 @@
+[33mcommit 471be7f8c158fe8defe17298eb7bc4d2df2f3b04[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: Emiliano Tremonte <emilianotremonte@gmail.com>
+Date:   Mon May 1 05:07:25 2023 -0300
+
+    todo en funcionamiento
+
+[33mcommit 8bc219f56c9751b42446268b0cb5e0d6b258e38b[m
+Author: Emiliano Tremonte <emilianotremonte@gmail.com>
+Date:   Sun Apr 30 21:56:38 2023 -0300
+
+    forms andando, script de search en py y html pero sin funcionar
+
+[33mcommit 6e5b69212bfb64417aa372f7c81cba74371bd06d[m
+Author: Emiliano Tremonte <emilianotremonte@gmail.com>
+Date:   Sun Apr 30 20:52:59 2023 -0300
+
+    forms en funcionamiento falta search
+
+[33mcommit e679617eeee70cbd1c53c36c2b477e961ed8e543[m
+Author: Emiliano Tremonte <emilianotremonte@gmail.com>
+Date:   Sun Apr 30 00:17:42 2023 -0300
+
+    temp de forms hechos, falta backend y busqueda
+
+[33mcommit 641905c1bd8d527e7cf1c6fbac6af7c1c134a01d[m
+Author: Emiliano Tremonte <emilianotremonte@gmail.com>
+Date:   Sat Apr 29 22:36:01 2023 -0300
+
+    clases finalizadas, faltan forms
+
+[33mcommit 2e21f5ada15c5e010a438e87f39e615b2e7fef90[m
+Author: Emiliano Tremonte <emilianotremonte@gmail.com>
+Date:   Sat Apr 29 21:47:08 2023 -0300
+
+    templates funcionando sin forms
+
+[33mcommit 2ddf857fb7e451ab8305cc04cbf5ab0f60558407[m
+Author: Emiliano Tremonte <emilianotremonte@gmail.com>
+Date:   Sat Apr 29 19:16:03 2023 -0300
+
+    2do commit
+
+[33mcommit ffaa40d51db1b84a20a74b100094a4a9b51280c8[m
+Author: en-tremonte <130000574+en-tremonte@users.noreply.github.com>
+Date:   Sat Apr 29 12:00:49 2023 -0300
+
+    Initial commit
