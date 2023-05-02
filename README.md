@@ -1,5 +1,6 @@
 # Pre-Entrega3-Tremonte
 
+
 En esta entrega se desarrollo un prototipo de web para registro y busqueda de revisaciones medicas para un natatorio. Esta pensada como para que el user sea personal del natatorio.
 
 Al entrar a la web se ve una barra de navegacion que tiene un boton de inicio a la izquierda. La funcion del mismo es mostrar la vista de inicio. La vista de inicio (inicio.html) consiste en la herencia de una vista padre.html la cual proviene de bootstrap.
@@ -17,6 +18,9 @@ En caso de ingresar un dato que no se encuentra en la DB nos devolvera un mensaj
 La casilla de busqueda pertenece a la plantilla revisacion.html, la cual es una plantilla heredada de padre.html. Los resultados de la busqueda pertenecen a la plantilla resultados_search.html
 
 En la vista de inicio, debajo de la barra de navegacion encontramos un mensaje del natatorio y en el footer datos genericos del natatorio ficticio. Todas las vistas heredadas se ubican entre el body y el footer.
+
+En la carpeta tercera_entrega se encuentran los archivos del proyecto django- 
+En la carpeta revisacion_medica se encuentra todos los archivos y carpetas relacionadas a la app. 
 
 En el archivo views.py se encuentran las funciones que definen las vistas de cada clase, las funciones que definen los forms y la busqueda.
 
